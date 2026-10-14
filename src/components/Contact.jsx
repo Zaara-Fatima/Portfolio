@@ -6,7 +6,7 @@ const socials = [
   // how they are exported in your "../assets/assets" file.
   { label: 'LinkedIn', icon: Icons.linkedIn, href: 'https://www.linkedin.com/in/zaara-f-a828b6363/' },
   { label: 'GitHub', icon: Icons.github, href: 'https://github.com/Zaara-Fatima' },
-  { label: 'Instagram', icon: Icons.instagram, href: 'https://instagram.com' }, 
+  { label: 'Instagram', icon: Icons.instagram, href: 'https://instagram.com/react.ing.dev' }, 
 ];
 
 export const Contact = () => {
