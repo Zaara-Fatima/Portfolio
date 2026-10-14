@@ -1,8 +1,10 @@
 import React from "react";
 import { Button } from "../utils/Button";
 import { projectImgs } from "../assets/assets";
+import resume1 from '../assets/resume1.pdf'
 
 export const Introduction = () => {
+   
   return (
     <section className="w-full flex flex-col items-center  bg-black p-6 " id="About">
       <div className="grid grid-cols-1 md:grid-cols-2">
@@ -27,14 +29,17 @@ export const Introduction = () => {
             applications — from the first wireframe to the final API.
           </p>
           <div className="flex flex-col gap-2 max-w-sm">
-            <Button
+            <a href="#Featured"><Button
               text="View Work"
               className="text-black bg-[#C6F27B] cursor-pointer rounded-[10px] text-md font-medium"
-            />
+            /></a>
+            
+            <a href="resume1" download="My_Resume.pdf">
             <Button
               text="Download CV"
               className="text-[#F3F4F1] cursor-pointer rounded-[10px] border-[#2A2F34] border text-md font-medium"
             />
+            </a>
           </div>
         </div>
 
