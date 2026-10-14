@@ -35,14 +35,14 @@ const skills = [
 
 export const Skills = () => {
   return (
-    <section className="w-full flex flex-col gap-2 bg-black p-6">
+    <section className="w-full flex flex-col gap-6 bg-black p-10" id='Skills'>
         <div className="flex items-center gap-2">
         <span className="bg-[#C6F27B] rounded-full h-2 w-2" />
         <h3 className="text-[#9BA1A6] text-sm font-medium">
           Skills & tools
         </h3>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col md:flex-row md:justify-between">
         <h1 className="text-[#F3F4F1] text-3xl">
             From first sketch to full stack.
         </h1>
@@ -51,26 +51,26 @@ export const Skills = () => {
         </p>
       </div>
       <div>
-        <ul className='grid grid-cols-2 gap-3 items-start'>
+        <ul className='grid grid-cols-2 md:grid-cols-3 gap-3 items-start p-2'>
           {skills.map((skill)=>(
-            <li className='bg-[#23272a] border-[#494c4e] border  p-2 rounded-2xl' key={skill.title}>
+            <li className='bg-[#14171A] border-[#22272B] border  p-2 rounded-2xl' key={skill.title}>
               <SkillCard icon={skill.icon} title={skill.title} text={skill.text}/>
             </li>
           ))}
         </ul>
       </div>
-      <div >
+      <div className='flex flex-col gap-2 md:flex-row justify-between p-2' >
         <p className='uppercase text-[#9BA1A6]'>Tools of the trade</p>
       <ul className='flex gap-2 text-[#F3F4F1]'>
-        <li>Figma <Icons.figma className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>React<Icons.react className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>JavaScript<Icons.javaScript className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>Vercel<Icons.vercel className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>Docker<Icons.docker className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>MongoDB<Icons.mongoDB
-        className="w-8 h-8 text-green-500 p-1"/></li>
-        <li>Github Actions<Icons.githubAction
-        className="w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>Figma <Icons.figma className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>React<Icons.react className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>JavaScript<Icons.javaScript className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>Vercel<Icons.vercel className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>Docker<Icons.docker className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>MongoDB<Icons.mongoDB
+        className=" w-8 h-8 text-green-500 p-1"/></li>
+        <li className='flex  items-center'>Github Actions<Icons.githubAction
+        className=" w-8 h-8 text-green-500 p-1"/></li>
       </ul>
       <ul className="flex gap-5 text-[#9BA1A6] md:justify-end">
             <li>VS Code</li>

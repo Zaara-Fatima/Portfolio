@@ -21,16 +21,15 @@ export const Contact = () => {
   };
 
   return (
-    <section className="w-full flex flex-col items-center bg-black p-2">
-      <div className="flex flex-col gap-4 p-2 max-w-xl">
-        <div className="flex items-center gap-2">
-          <span className="bg-[#C6F27B] rounded-full h-2 w-2" />
+    <section className="max-auto w-full  flex flex-col items-center bg-[#14171A] " id="Contact">
+      <div className="grid grid-cols-1 gap-10 py-16 md:grid-cols-[1fr_380px] md:gap-24 md:pb-18 md:pt-18">
+        <div className="flex flex-col">
+          <div className="flex  items-center gap-2"><span className="bg-[#C6F27B] rounded-full h-2 w-2" />
           <h2 className="text-[#9BA1A6] text-sm font-medium">
             Have something in mind?
-          </h2>
-        </div>
-        
-        <div>
+          </h2></div>
+          
+          <div>
           <h1 className="text-3xl font-bold text-white">
             Let's build something worth using.
           </h1>
@@ -38,10 +37,14 @@ export const Contact = () => {
             href="mailto:banoshabeena318@gmail.com" 
             className="flex gap-2 items-center text-[#C6F27B] hover:underline w-fit"
           >
-            <p>banoshabeena318@gmail.com</p>
-            <span className="material-symbols-outlined">arrow_outward</span>
+            <div className="flex gap-2"><p>banoshabeena318@gmail.com</p>
+            <span className="material-symbols-outlined">arrow_outward</span></div>
+            
           </a>
         </div>
+        </div>
+        
+        
 
         <div>
           <p className="text-white font-medium">A little signal. No noise.</p>
@@ -51,7 +54,7 @@ export const Contact = () => {
           </p>
           <form
             onSubmit={onSubmit}
-            className="mt-5 flex items-center gap-2 rounded-xl border  bg-[##23272a] p-1"
+            className="mt-5 flex items-center gap-2 rounded-xl border border-[#1A1D21]  bg-[#0C0E10] p-1"
           >
             <label htmlFor="email" className="sr-only">
               Email address
@@ -83,7 +86,8 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-5 border-t  py-8 text-xs text-[#9BA1A6] md:flex-row md:items-center md:justify-between">
+        
+      </div><div className="flex flex-col gap-5 border-t  py-8 text-xs text-[#9BA1A6] md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
             <span>© 2026 Zaara Fatima. All rights reserved.</span>
           </div>
@@ -105,7 +109,6 @@ export const Contact = () => {
             ))}
           </ul>
         </div>
-      </div>
     </section>
   );
 };

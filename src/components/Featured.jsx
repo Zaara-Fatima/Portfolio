@@ -66,8 +66,8 @@ const projects = [
 ];
 export const Featured = () => {
   return (
-    <section className="w-full flex flex-col gap-2 bg-black p-6">
-      <div className="flex items-center gap-2">
+    <section className="w-full flex flex-col  gap-2 bg-black p-10 border border-y-[#1D2125] " id="Featured">
+      <div className="flex items-center gap-2 ">
         <span className="bg-[#C6F27B] rounded-full h-2 w-2" />
         <h3 className="text-[#9BA1A6] text-sm font-medium">
           PROJECTS COMPLETED/ 2024-2026
@@ -81,7 +81,7 @@ export const Featured = () => {
           surface. Solid underneath.
         </p>
       </div>
-      <div>
+      <div className="grid grid-cols-1 md:grid-cols-2 p-2 gap-6">
         {projects.map((project) => (
           <ProjectCards
             key={project.title}

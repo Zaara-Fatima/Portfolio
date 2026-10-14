@@ -3,6 +3,7 @@ import project2 from "./project2.png";
 import project3 from "./project3.png";
 import project4 from "./project4.png";
 import project5 from "./project5.png";
+import pfp from "./pfp.jpg"
 
 export const Icons = {
   figma: ({ className }) => (
@@ -51,4 +52,5 @@ instagram:({className})=>(
   )
 };
 
-export const projectImgs = [project1, project2, project3, project4, project5];
+export const projectImgs = [project1, project2, project3, project4, project5 ,pfp];
+
