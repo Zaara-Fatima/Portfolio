@@ -1,5 +1,5 @@
 import React from 'react'
-import { Introduction } from '../components/introduction'
+import { Introduction } from '../components/Introduction'
 import { Featured } from '../components/Featured'
 import { Skills } from '../components/Skills'
 import {Contact} from '../components/Contact'
