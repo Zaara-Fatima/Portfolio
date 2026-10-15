@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../utils/Button";
 import { projectImgs } from "../assets/assets";
-import resume1 from '../assets/resume1.pdf'
+import Resume1 from '../assets/Resume1.pdf'
 
 export const Introduction = () => {
    
@@ -34,7 +34,7 @@ export const Introduction = () => {
               className="text-black bg-[#C6F27B] cursor-pointer rounded-[10px] text-md font-medium"
             /></a>
             
-            <a href="resume1" download="My_Resume.pdf">
+            <a href="Resume1" download="My_Resume.pdf">
             <Button
               text="Download CV"
               className="text-[#F3F4F1] cursor-pointer rounded-[10px] border-[#2A2F34] border text-md font-medium"
